@@ -1,24 +1,17 @@
-# README
+Тестовое задание от компании СофтПроект:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Время: 1 час работы. 
 
-Things you may want to cover:
+Необходимо написать url shorterer.
 
-* Ruby version
+Необходимо реализовать сервис сокращения ссылок. Данный сервис должен реализовывать 3 запроса:
 
-* System dependencies
+POST /urls который возвращает короткий url
+GET /urls/:short_url который возвращает длинный URL и увеличивает счетчик запросов на 1
+GET /urls/:short_url/stats который возвращает количество переходов по URL
 
-* Configuration
+Проект необходимо реализовать на Ruby On Rails.
+База - на выбор.
+=======================================================================================
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails new  shorterer --database=postgresql --api --git -T
